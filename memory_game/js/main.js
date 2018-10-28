@@ -1,6 +1,19 @@
 // memory game ga
 
-var cardOne = "queen";
-var cardTwo = "queen";
+var cards =  ['queen','queen','king','king'];
+var cardsInPlay = [];
+
+var cardOne = cards[0]; 
+cardsInPlay.push(cardOne);
+var cardTwo = cards[2];
+cardsInPlay.push(cardTwo);
+if(cardsInPlay.length === 2){
+    if(cardsInPlay[0]==cardsInPlay[1]){
+        alert('you found a match');
+    }
+}
 var cardThree = "king";
 var cardFour = "king";
+
+
+
